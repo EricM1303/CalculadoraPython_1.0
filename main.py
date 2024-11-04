@@ -47,3 +47,8 @@ def calculadora():
                 print("Erro: Por favor, insira um número válido.")
         else:
             print("Opção inválida!")
+
+        continuar = input("Deseja realizar outra operação? (s/n): ")
+        if continuar.lower() != 's':
+            print("Encerrando a calculadora.")
+            break
