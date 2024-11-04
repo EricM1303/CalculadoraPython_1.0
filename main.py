@@ -24,3 +24,26 @@ def calculadora():
     print("2. Subtração")
     print("3. Multiplicação")
     print("4. Divisão")
+
+
+    while True:
+        opcao = input("Digite a opção (1/2/3/4): ")
+        lista_opcoes = ['1', '2', '3', '4']
+
+        if opcao in lista_opcoes:
+            try:
+                num1 = float(input("Digite o primeiro número: "))
+                num2 = float(input("Digite o segundo número: "))
+
+                if opcao == '1':
+                    print(f"Resultado: {num1} + {num2} = {soma(num1, num2)}")
+                elif opcao == '2':
+                    print(f"Resultado: {num1} - {num2} = {subtracao(num1, num2)}")
+                elif opcao == '3':
+                    print(f"Resultado: {num1} * {num2} = {multiplicacao(num1, num2)}")
+                elif opcao == '4':
+                    print(f"Resultado: {num1} / {num2} = {divisao(num1, num2)}")
+            except ValueError:
+                print("Erro: Por favor, insira um número válido.")
+        else:
+            print("Opção inválida!")
