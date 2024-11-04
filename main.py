@@ -52,3 +52,5 @@ def calculadora():
         if continuar.lower() != 's':
             print("Encerrando a calculadora.")
             break
+
+calculadora()
