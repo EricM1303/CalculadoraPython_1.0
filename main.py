@@ -16,3 +16,11 @@ def multiplicacao(x, y):
 
 def divisao(x, y):
     return x / y
+
+
+def calculadora():
+    print("Selecione a operação:")
+    print("1. Soma")
+    print("2. Subtração")
+    print("3. Multiplicação")
+    print("4. Divisão")
