@@ -5,17 +5,13 @@ Descrição: Calculadora simples, ela faz operações com soma, subtração, mul
 
 '''
 
-def soma(x, y):
-    return x + y
+soma = lambda x,y: x + y
 
-def subtracao(x, y):
-    return x - y
+subtracao = lambda x,y: x + y
 
-def multiplicacao(x, y):
-    return x * y
+multiplicacao = lambda x,y: x + y
 
-def divisao(x, y):
-    return x / y
+divisao = lambda x,y: x + y
 
 
 def calculadora():
