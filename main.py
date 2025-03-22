@@ -41,8 +41,18 @@ def calculadora():
                     print(f"Resultado: {num1} / {num2} = {divisao(num1, num2)}")
             except ValueError:
                 print("Erro: Por favor, insira um número válido.")
+
+        elif opcao == '':
+            print("Por favor, digite alguma opção!")
+            continue
+
+        elif isinstance(opcao, str):
+            print('Digite apenas números!')
+            continue
+        
         else:
-            print("Opção inválida!")
+            print('Opção inválida!')
+            continue
 
         continuar = input("Deseja realizar outra operação? (s/n): ")
         if continuar.lower() != 's':
